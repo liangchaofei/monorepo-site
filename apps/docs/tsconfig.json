@@ -1,5 +1,16 @@
 {
-  "extends": "tsconfig/react-app.json",
-  "include": ["."],
-  "exclude": ["dist", "build", "node_modules"]
+  "compilerOptions": {
+    "strict": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "baseUrl": "./",
+    "paths": {
+      "@@/*": [
+        ".dumi/tmp/*"
+      ]
+    }
+  },
+  "include": [
+    ".dumirc.ts"
+  ]
 }
